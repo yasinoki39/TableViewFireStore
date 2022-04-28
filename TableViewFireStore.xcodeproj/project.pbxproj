@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		9EEB1D072810500600E2A3FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEB1D052810500600E2A3FB /* Main.storyboard */; };
 		9EEB1D092810500700E2A3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEB1D082810500700E2A3FB /* Assets.xcassets */; };
 		9EEB1D0C2810500700E2A3FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEB1D0A2810500700E2A3FB /* LaunchScreen.storyboard */; };
+		9EEB1D182810520500E2A3FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EEB1D172810520500E2A3FB /* GoogleService-Info.plist */; };
+		B2581767C5F1B3C77C342C89 /* Pods_TableViewFireStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D1F38A2B9AFD9062283ADB /* Pods_TableViewFireStore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15D1F38A2B9AFD9062283ADB /* Pods_TableViewFireStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewFireStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3344300D956D72AE717B3180 /* Pods-TableViewFireStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewFireStore.debug.xcconfig"; path = "Target Support Files/Pods-TableViewFireStore/Pods-TableViewFireStore.debug.xcconfig"; sourceTree = "<group>"; };
+		546DEA78EB0D9D3DC0C19DD0 /* Pods-TableViewFireStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewFireStore.release.xcconfig"; path = "Target Support Files/Pods-TableViewFireStore/Pods-TableViewFireStore.release.xcconfig"; sourceTree = "<group>"; };
 		9EEB1CFC2810500600E2A3FB /* TableViewFireStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewFireStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EEB1CFF2810500600E2A3FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EEB1D012810500600E2A3FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		9EEB1D082810500700E2A3FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EEB1D0B2810500700E2A3FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EEB1D0D2810500700E2A3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEB1D172810520500E2A3FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2581767C5F1B3C77C342C89 /* Pods_TableViewFireStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		600E8A9C455B4463FE18F59E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15D1F38A2B9AFD9062283ADB /* Pods_TableViewFireStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66382682B9394C8B3542086A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3344300D956D72AE717B3180 /* Pods-TableViewFireStore.debug.xcconfig */,
+				546DEA78EB0D9D3DC0C19DD0 /* Pods-TableViewFireStore.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9EEB1CF32810500600E2A3FB = {
 			isa = PBXGroup;
 			children = (
 				9EEB1CFE2810500600E2A3FB /* TableViewFireStore */,
 				9EEB1CFD2810500600E2A3FB /* Products */,
+				66382682B9394C8B3542086A /* Pods */,
+				600E8A9C455B4463FE18F59E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				9EEB1D082810500700E2A3FB /* Assets.xcassets */,
 				9EEB1D0A2810500700E2A3FB /* LaunchScreen.storyboard */,
 				9EEB1D0D2810500700E2A3FB /* Info.plist */,
+				9EEB1D172810520500E2A3FB /* GoogleService-Info.plist */,
 			);
 			path = TableViewFireStore;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EEB1D102810500700E2A3FB /* Build configuration list for PBXNativeTarget "TableViewFireStore" */;
 			buildPhases = (
+				A9ABF6490BA89D42B2D547FF /* [CP] Check Pods Manifest.lock */,
 				9EEB1CF82810500600E2A3FB /* Sources */,
 				9EEB1CF92810500600E2A3FB /* Frameworks */,
 				9EEB1CFA2810500600E2A3FB /* Resources */,
+				D9BA47CF72065329679DCEFB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +154,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EEB1D0C2810500700E2A3FB /* LaunchScreen.storyboard in Resources */,
+				9EEB1D182810520500E2A3FB /* GoogleService-Info.plist in Resources */,
 				9EEB1D092810500700E2A3FB /* Assets.xcassets in Resources */,
 				9EEB1D072810500600E2A3FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9ABF6490BA89D42B2D547FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableViewFireStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9BA47CF72065329679DCEFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableViewFireStore/Pods-TableViewFireStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableViewFireStore/Pods-TableViewFireStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TableViewFireStore/Pods-TableViewFireStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EEB1CF82810500600E2A3FB /* Sources */ = {
@@ -283,12 +355,14 @@
 		};
 		9EEB1D112810500700E2A3FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3344300D956D72AE717B3180 /* Pods-TableViewFireStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L27GL78CVB;
 				INFOPLIST_FILE = TableViewFireStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +376,14 @@
 		};
 		9EEB1D122810500700E2A3FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546DEA78EB0D9D3DC0C19DD0 /* Pods-TableViewFireStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L27GL78CVB;
 				INFOPLIST_FILE = TableViewFireStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
